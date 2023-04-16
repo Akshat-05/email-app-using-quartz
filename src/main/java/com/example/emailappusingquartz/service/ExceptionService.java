@@ -13,7 +13,7 @@ public class ExceptionService {
                 .message("Unidentified Error")
                 .success(false)
                 .build();
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY)
                 .body(response);
     }
 }
